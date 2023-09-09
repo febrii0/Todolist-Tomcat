@@ -31,3 +31,7 @@ function viewShowTodoList()
 
      echo "Sampai Jumpa Lagi" . PHP_EOL;
 }
+function viewShowTodoList()
+{
+    ShowTodoList();
+}
