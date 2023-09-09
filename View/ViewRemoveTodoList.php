@@ -1,6 +1,5 @@
 <?php
 
-function viewRemoveTodoList()
-{
-    
+function viewRemoveTodoList() {
+  $todoList = getTodoList();
 }
