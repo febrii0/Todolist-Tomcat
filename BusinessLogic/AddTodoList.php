@@ -1,11 +1,11 @@
 <?php
 
-// Menambah Todo di List
-function addTodoList(string $todo)
+// Menambah Todo ke List
+function AddTodoList(string $todo)
 {
-    global $todoList;
+    global $todolist;
 
-    $number = sizeof($todoList) + 1;
+    $number = sizeof($todolist) + 1;
 
-    $todoList[$number] = $todo;
+    $todolist[$number] = $todo;
 }

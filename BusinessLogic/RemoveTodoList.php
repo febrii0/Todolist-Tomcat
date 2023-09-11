@@ -1,21 +1,20 @@
 <?php
 
 // Menghapus Todo di List
-function removeTodoList(int $number): bool
-{
-    global $todoList;
 
-    if($number > sizeof($todoList)) {
+function RemoveTodoList($number)
+{
+    global $todolist;
+
+    if ($number > sizeof($todolist)) {
         return false;
     }
 
-    for ($i = $number; $i < sizeof($todoList); $i++) {
-        $todoList[$i] = $todoList[$i + 1]; 
+    for ($i = $number; $i < sizeof($todolist); $i++) {
+        $todolist[$i] = $todolist[$i + 1];
     }
-    unset($todoList[sizeof($todoList)]);
 
-    return true;    
-function removeTodoList()
-{
-  
+    unset($todolist[sizeof($todolist)]);
+
+    return true;
 }

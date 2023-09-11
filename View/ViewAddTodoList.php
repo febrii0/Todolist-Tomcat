@@ -1,24 +1,17 @@
 <?php
+require_once __DIR__ . "/../Model/TodoList.php";
+require_once __DIR__ . "/../Helper/Input.php";
+require_once __DIR__ . "/../BusinessLogic/AddTodoList.php";
 
-require_once "../Model/TodoList.php";
-require_once "../Helper/Input.php";
-require_once "../BusinessLogic/AddTodoList.php";
-
-function viewAddTodoList()
+function viewAddTodolist()
 {
     echo "MENAMBAH TODO" . PHP_EOL;
-    viewAddTodoList();
 
     $todo = input("Todo (x untuk batal) ");
-    if($todo == "x") {
-        echo "Batal menambah todo" . PHP_EOL;
-    } else {
-        addTodoList($todo);
-        echo "Todo berhasil ditambahkan" . PHP_EOL;
-    }
-}
 
-function viewAddTodoList()
-{
-    echo "MENAMBAH TODO" . PHP_EOL;
+    if ($todo == "x") {
+        echo "Batal menambah Todo" . PHP_EOL;
+    } else {
+        AddTodoList($todo);
+    }
 }

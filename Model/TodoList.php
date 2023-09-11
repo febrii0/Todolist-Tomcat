@@ -1,3 +1,3 @@
 <?php
 
-$todoList = array();
+$todolist = array();

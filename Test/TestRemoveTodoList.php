@@ -2,27 +2,22 @@
 
 require_once "../Model/TodoList.php";
 require_once "../BusinessLogic/AddTodoList.php";
-require_once "../BusinessLogic/ShowTodoList.php";
 require_once "../BusinessLogic/RemoveTodoList.php";
+require_once "../BusinessLogic/ShowTodolist.php";
 
-
-AddTodoList("Agata Whindi F");
-AddTodoList("Febriansyah Agung T");
-AddTodoList("Sifani Amira");
-AddTodoList("Agata");
-AddTodoList("Febri");
-
-showTodoList();
-
-removeTodoList(3);
+AddTodoList("Faisal");
+AddTodoList("Basri");
+AddTodoList("Adit");
+AddTodoList("Hari");
+AddTodoList("Dwi");
 
 showTodoList();
 
-removeTodoList(2);
+RemoveTodoList(3);
 
 showTodoList();
 
-$success = RemoveTodoList(4);
+$success = RemoveTodoList(5);
 var_dump($success);
 
 showTodoList();
